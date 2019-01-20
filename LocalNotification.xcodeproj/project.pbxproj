@@ -109,6 +109,7 @@
 			children = (
 				C75A33FC21F4B4F50057E33C /* UNNotificationActionType.swift */,
 				C75A33FE21F4B52E0057E33C /* UNNotificationCategoryType.swift */,
+				C75A33F321F4ABF50057E33C /* NotifivationAttachementType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -119,7 +120,6 @@
 				C75A33ED21F4264E0057E33C /* UNService.swift */,
 				C75A33EF21F4540A0057E33C /* AlertService.swift */,
 				C75A33F121F494370057E33C /* CLService.swift */,
-				C75A33F321F4ABF50057E33C /* NotifivationAttachementType.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";

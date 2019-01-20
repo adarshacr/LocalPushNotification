@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LocalNotification" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="apk-0o-exa" customClass="UnView" customModule="LocalNotification" customModuleProvider="target">
+                                <rect key="frame" x="41.5" y="208.5" width="292" height="250"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pzb-B3-MkE">
+                                        <rect key="frame" x="10" y="10" width="272" height="230"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPx-2R-YFI">
+                                                <rect key="frame" x="116" y="0.0" width="40" height="200"/>
+                                                <state key="normal" title="Timer"/>
+                                                <connections>
+                                                    <action selector="timerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rTI-eA-jHk"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="goK-P9-Qbz">
+                                                <rect key="frame" x="50" y="200" width="172" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUV-t0-Xda">
+                                                        <rect key="frame" x="0.0" y="0.0" width="33" height="30"/>
+                                                        <state key="normal" title="Date"/>
+                                                        <connections>
+                                                            <action selector="dateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hhd-g9-Xcr"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUQ-x4-juh">
+                                                        <rect key="frame" x="113" y="0.0" width="59" height="30"/>
+                                                        <state key="normal" title="Location"/>
+                                                        <connections>
+                                                            <action selector="locationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4a5-Lj-o6L"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="pzb-B3-MkE" firstAttribute="leading" secondItem="apk-0o-exa" secondAttribute="leading" constant="10" id="1Ns-vX-09Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="pzb-B3-MkE" secondAttribute="trailing" constant="10" id="6sn-28-cyb"/>
+                                    <constraint firstItem="pzb-B3-MkE" firstAttribute="top" secondItem="apk-0o-exa" secondAttribute="top" constant="10" id="88A-TV-cyH"/>
+                                    <constraint firstAttribute="width" constant="292" id="Q1a-nY-Bx9"/>
+                                    <constraint firstAttribute="height" constant="250" id="QLX-jq-rvf"/>
+                                    <constraint firstAttribute="bottom" secondItem="pzb-B3-MkE" secondAttribute="bottom" constant="10" id="SW8-rp-g2Y"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.85112235915492962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="apk-0o-exa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="F7g-ya-z5B"/>
+                            <constraint firstItem="apk-0o-exa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FYQ-Bp-Gef"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
